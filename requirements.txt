@@ -1,0 +1,16 @@
+lerobot
+torch
+torchvision
+transformers
+accelerate
+datasets
+numpy
+numba
+scipy
+pandas
+opencv-python
+Pillow
+torchcodec
+huggingface-hub
+tqdm
+pyyaml
