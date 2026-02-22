@@ -42,11 +42,6 @@ pip install ".[smolvla]"   # 在 lerobot 源码目录下
 pip install -r requirements.txt
 ```
 
-若安装后出现 **numba 与 numpy 版本冲突**（例如 `numba 0.59.1 requires numpy<1.27, but you have numpy 2.x`），可升级 numba 以兼容 numpy 2.x：
-
-```bash
-pip install "numba>=0.63"
-```
 
 ### 2.2 数据转换：原始数据 → LeRobot v3
 
@@ -135,7 +130,7 @@ bash scripts/train_smolvla.sh
 |------|------|
 | `scripts/convert_yeahbot_to_lerobot.py` | 原始数据 → LeRobot v3，按 session 为 episode，图像与 joint 按时间戳对齐 |
 | `scripts/train_smolvla.sh` | SmolVLA 训练入口，支持本地/Hub 数据集 |
-| `requirements_autodl.txt` | 可选依赖列表（含 lerobot 源码安装方式） |
+| `requirements.txt` | 可选依赖列表（含 lerobot 源码安装方式） |
 
 ---
 
